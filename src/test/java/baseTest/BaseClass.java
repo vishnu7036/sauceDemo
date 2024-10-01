@@ -17,12 +17,12 @@ import java.util.Properties;
 public class BaseClass {
     private String dir;
     protected AndroidDriver driver;
-    public PageObjectManager pm;
+    protected PageObjectManager pm;
     protected String email;
     protected String pass;
     public AppiumDriverLocalService service;
 
-    @BeforeClass
+    @BeforeTest
     public void setEmulator() throws MalformedURLException {
             dir = System.getProperty("user.dir");
 //            service = new AppiumServiceBuilder().withAppiumJS(new File("C://Users//Mind-Graph//AppData//Roaming//npm//node_modules//appium//build//lib//main.js"))
