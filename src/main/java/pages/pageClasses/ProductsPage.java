@@ -22,6 +22,6 @@ public class ProductsPage extends MobileUtils implements ProductsPageLoc {
     }
 
     public void clickOnCartButton() {
-        _driver.findElement(btnCart).click();
+        click(btnCart);
     }
 }

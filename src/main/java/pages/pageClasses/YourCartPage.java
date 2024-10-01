@@ -1,8 +1,6 @@
 package pages.pageClasses;
 
-import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import pages.pageLocators.YourCartPageLoc;
 import utils.MobileUtils;
@@ -16,12 +14,12 @@ public class YourCartPage extends MobileUtils implements YourCartPageLoc {
     }
 
     public void verifyYourCartPage() {
-        _driver.findElement(lblHeading).isDisplayed();
+        verifyElementIsDisplayed(lblHeading,"You Cart Page");
     }
 
     public void clickOnCheckOutButton() {
         scrollToElement("CHECKOUT");
-        _driver.findElement(btnCheckout).click();
+        click(btnCheckout);
     }
 
 }

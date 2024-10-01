@@ -4,6 +4,7 @@ import baseTest.BaseClass;
 import org.testng.annotations.Test;
 
 public class TestProductsAddToCart extends BaseClass {
+
     @Test
     public void VerifyProductsAddToCart(){
         pm.loginPage().verifyLoginPage();
